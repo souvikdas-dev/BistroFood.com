@@ -1,0 +1,23 @@
+.background {
+    filter: blur(4px);
+}
+
+.foreground {
+    background: rgba( 255, 255, 255, 0.10);
+    box-shadow: 0 8px 25px 0 rgba( 31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    /* border-radius: 10px; */
+    border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.txt-clr1 {
+    color: #fd7e14;
+    color: #d55f8f;
+    color: #fb7f64;
+}
+.sub
+{
+    background-color: #fd7e14;
+    border-radius: 50%;
+}

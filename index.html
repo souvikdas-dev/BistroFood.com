@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <title>Bistro Food </title>
+    <style>
+        /* Style For Custom Scroll-bar */
+        /* width */
+        ::-webkit-scrollbar {
+            width: 15px;
+            /* background-color: #666; */
+            background-color: transparent;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            /* border-radius: 10px; */
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background-color: #FC5C7D;
+
+            border: 1px solid rgba(255, 255, 255, 70%);
+            border-radius: 7px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            /* background: #b30000; */
+
+            /* background-image: linear-gradient(135deg, #43CBFF 10%, #9708CC 100%); */
+            background-color: rgba(0, 0, 0, 0.75);
+        }
+
+        body {
+            background-image: url('img/bg.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+
+            /* background: linear-gradient(70deg, #ffdb10 30%, rgba(0, 0, 0, 0) 30%), linear-gradient(30deg, #0aa2e9 60%, #fb7eff 60%); */
+        }
+
+        .com {
+            border: 2px solid red;
+        }
+
+        .gl-font {
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light foreground sticky-top justify-content-around">
+        <div class="container-fluid mx-sm-4">
+            <a class="navbar-brand comp-br gl-font" href="#">
+                <img src="img/hamburger.png" alt="" width="45" height="40" class="b-0 mx-1">
+                Bistro Food
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active fs-5 fw-bold" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fs-5 fw-bold" href="#about_us">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown mx-2 fs-5 fw-bold">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Start_Up</a></li>
+                            <li><a class="dropdown-item" href="#">Main Course</a></li>
+                            <li><a class="dropdown-item" href="#">Dessert</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#">Online Order</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link fs-5 fw-bold" href="#contact_us">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <a class="btn btn-outline-danger mx-2">
+                        Today's Hot
+                    </a>
+                    <a href="mailto:sd8338820@gmail.com" class="btn btn-outline-info rounded-pill mx-2"
+                        type="submit">Email us</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    -->
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators justify-content-start">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img src="img/sldbg1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="img/sldbg2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="img/sldbg3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div class="container-fluid vh-100"></div>
+
+    <!-- <div class="d-flex p-2 bd-highlight com">I'm a flexbox container!</div> -->
+
+    <div id="contact_us" class="container-fluid my-sm-4 py-sm-5 mx-auto">
+        <!-- Content here -->
+        <!-- contact_us -->
+
+        <div class="row col-sm-9 mx-auto rounded-3 foreground">
+            <h4 class="mx-auto my-4 text-center gl-font">
+                Contact Us
+            </h4>
+            <form action="mailto:Fitness_monster@gmail.com" method="post" enctype="text/plain"
+                class="bg-white row g-5 mx-auto mt-0">
+                <div class="fanme frm-itm col-md-6">
+                    <label for="fname" class="form-label">First Name</label>
+                    <input type="text" id="fname" name="first name" class="form-control border-dark border-2">
+                </div>
+
+                <div class="lname frm-itm col-md-6">
+                    <label for="lname" class="form-label">Last Name</label>
+                    <input type="text" id="lname" name="last name" class="form-control border-dark border-2">
+                </div>
+
+
+                <div class="email frm-itm col-md-6">
+                    <label for="email" class="form-label">Email *</label>
+                    <input type="email" id="email" name="email id" class="form-control border-dark border-2">
+                </div>
+
+                <div class="phone frm-itm col-md-6">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" id="phone" name="phone no" pattern="[0-9]{10}"
+                        class="form-control border-dark border-2">
+                </div>
+
+
+                <div class="col-12">
+                    <label for="massage" class="form-label">Message</label>
+                    <textarea name="message" id="massage" class="form-control border-info border-2"></textarea>
+                </div>
+
+                <div class="col-12 mb-3">
+                    <input class="btn frm-btn m-sm-1 btn-outline-warning" type="submit" value="Submit">
+                    <input class="btn frm-btn m-sm-1 btn-outline-warning" type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="about_us" class="container-fluid my-3 p-sm-3 shadow my-5 bg-body rounded">
+
+        <div class="container-fluid text-center my-3 p-sm-3 gl-font">
+            <h2 class="txt-clr1">About Us</h2>
+            <h4>Some text about who we are and what we do.</h4>
+            <h6>Resize the browser window to see that this page is responsive by the way.</h5>
+        </div>
+
+        <div class="container-fluid row mx-auto justify-content-evenly p-sm-3">
+
+            <div class="card my-3" style="width: 18rem; border: 1px solid orangered;">
+                <img src="https://source.unsplash.com/600x400/?chinese food,cake" class="card-img-top" alt="...">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+            </div>
+
+            <div class="card my-3" style="width: 18rem; border: 1px solid orangered;">
+                <img src="https://source.unsplash.com/600x400/?Fast food,drink" class="card-img-top" alt="...">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+            </div>
+
+            <div class="card my-3" style="width: 18rem; border: 1px solid orangered;">
+                <img src="https://source.unsplash.com/600x400/?Junk food,Snack" class="card-img-top" alt="...">
+                <!-- <img src="..." class="card-img-top" alt="..."> -->
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="container-fluid com"></div> -->
+
+    <!-- <div class="position-fixed top-50 end-50 sub">
+        <img src="diet.png" class="" alt="..." width="85" height="85"><br>
+        <span>
+            Reserve table
+        </span>
+    </div> -->
+
+    <div class="container-fluid bg-warning">
+        @2023 Created by Souvik Das
+    </div>
+
+</body>
+
+</html>
